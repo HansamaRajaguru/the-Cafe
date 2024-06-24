@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow:hidden; /* Ensure no scrollbar appears */
+  }
+  
+  .App {
+    text-align: center;
+    height: 100%; /* Ensure the App component takes full height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    background: #d2c3a6; /* Light brown */
+    padding: 0.5em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: 'Lobster';
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.5s;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
