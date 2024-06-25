@@ -1,0 +1,56 @@
+.home {
+    height: calc(100vh - 40px); /* Adjust the height to account for the navigation bar */
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding: 0;
+    
+}
+
+/* Light theme background */
+.home.light {
+    background-image: url('../images/light_home.jpg'); /* Path to light theme image */
+}
+
+/* Dark theme background */
+.home.dark {
+    background-image: url('../images/dark_home.jpg'); /* Path to dark theme image */
+}
+
+.home .content {
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Take up the remaining space */
+}
+
+.home h1 {
+    margin: 0;
+    font-size: 7em;
+    color: inherit;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.home .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px ;
+    font-family: 'Lobster', cursive;
+}
+
+.home .footer h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: inherit;
+    margin-right: 20px;
+}

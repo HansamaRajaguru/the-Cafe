@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-
+import Home from './Home';
 import { useTheme, ThemeProvider } from '../contexts/ThemeContext';
 import './App.css';
 
@@ -24,7 +24,7 @@ const App: React.FC = () => {
                     </nav>
                     <main>
                         <Routes>
-                            
+                            <Route path="/" element={<Home />} />
                         </Routes>
                     </main>
                 </div>
