@@ -1,0 +1,81 @@
+
+.where {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+    padding: 20px;
+    transition: background 0.5s, color 0.5s;
+    font-family: 'Lobster', cursive;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .where.light {
+    background: linear-gradient(to right, #8b806a, #f1e2da); /* Light background */
+    color: #5b430e; /* Dark brown font color */
+  }
+  
+  .where.dark {
+    background: linear-gradient(to right, #120401, #2f2621); /* Dark background */
+    color: rgb(210, 197, 181); /* White font color */
+  }
+  
+  .where h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 600;
+    text-align: left; 
+    width: 100%; 
+  }
+  
+  .bold {
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:azure;
+  }
+  
+  .where .location-image {
+    margin-top: 20px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  /* General styles for the form */
+  .where form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  .where label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .where input,
+  .where textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .where button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5b430e; /* Match the theme color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .where button:hover {
+    background-color: #8b806a; /* Lighten the button on hover */
+  }
+  

@@ -5,6 +5,7 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import Home from './Home';
 import About from './About';
 import Menu from './Menu';
+import Where from './Where';
 import { useTheme, ThemeProvider } from '../contexts/ThemeContext';
 import './App.css';
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
                             <Route path="/" element={<Home />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/menu" element={<Menu />} />
+                            <Route path="/where" element={<Where />} />
                         </Routes>
                     </main>
                 </div>
