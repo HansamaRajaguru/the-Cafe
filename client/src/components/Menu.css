@@ -1,0 +1,88 @@
+.menu-container {
+    height: calc(100vh - 40px); /* Adjust height to account for the navigation bar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.5s, color 0.5s;
+    font-family: 'Lobster', cursive;
+}
+
+.menu-container.light {
+    background: linear-gradient(to right, #8b806a, #f1e2da); /* Light background */
+    color: #5b430e; /* Dark brown font color */
+}
+
+.menu-container.dark {
+    background: linear-gradient(to right, #120401, #2f2621); /* Dark background */
+    color: rgb(210, 197, 181); /* White font color */
+}
+
+.menu-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 6px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-button.light {
+    background-color: #f0f0f0;
+    color: rgb(21, 21, 21);
+}
+
+.menu-button.dark {
+    background-color: #333;
+    color: white;
+}
+
+.menu-button.selected {
+    font-weight: bold;
+    border-bottom: 2px solid currentColor;
+}
+
+.scrollable-content {
+    overflow-y: auto;
+    max-height: 60vh; /* Set a maximum height for the scrollable area */
+    width: 100%;
+    padding: 20px; /* Add padding to keep content away from edges */
+}
+
+.menu-list dl {
+    list-style-type:armenian;
+    padding: 0;
+    
+}
+
+.menu-list dt {
+    margin: 6px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+}
+.menu-list dd {
+    margin: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-align:justify;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.menu-image {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
